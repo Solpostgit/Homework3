@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        task1(); /*
+        task1();
         task2();
-        task3();
+        task3();/*
         task4();
         task5(); */
     }
@@ -25,11 +25,20 @@ public class Main {
 
     }
     public static void task2 () {
-        System.out.println("Task 2");
-        byte months = 12;
+        System.out.println("Task 2 completed");
+        float a = 27.12f;
+        long b = 987678965549L;
+        float a2 = 2.786f;
+        short c = 569;
+        short c2 = -159;
+        short c3 = 27897;
+        byte d = 67;
+
+    }
+    public static void task3 () {
+        System.out.println("Task 3");
 
 
     }
-
 
 }
