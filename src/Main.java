@@ -3,8 +3,11 @@ public class Main {
         task1();
         task2();
         task3();
-        task4();/*
-        task5(); */
+        task4();
+        task5();/*
+        task6();
+        task7();
+        task8(); */
     }
 
     public static void task1 () {
@@ -63,6 +66,18 @@ public class Main {
         System.out.println("За 1 месяц машина произвела " + jobMonth + " штук бутылок");
         System.out.println();
 
+    }
+    public static void task5 () {
+        System.out.println("Task 5");
+        byte totalCansPaint = 120;
+        byte WhitePaint = 2;
+        byte BrownPaint = 4;
+        byte classroomCans = (byte) (WhitePaint + BrownPaint);
+        byte totalClassroom = (byte) (totalCansPaint / classroomCans);
+        byte totalWhitePaint = (byte) (WhitePaint * totalClassroom);
+        byte totalBrownPaint = (byte) (BrownPaint * totalClassroom);
+        System.out.println("В школе, где " + totalClassroom + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
+        System.out.println();
     }
 
 }
