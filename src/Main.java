@@ -1,5 +1,35 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        task1(); /*
+        task2();
+        task3();
+        task4();
+        task5(); */
     }
+
+    public static void task1 () {
+        System.out.println("Task 1");
+        byte months = 12;
+        short days = 365;
+        int years = 35000;
+        long lightYears = 128000;
+        float salt = 1.5f;
+        double milk = 3.2;
+        System.out.println("Значение переменной months с типом byte равно " + months);
+        System.out.println("Значение переменной days с типом short равно " + days);
+        System.out.println("Значение переменной years с типом int равно " + years);
+        System.out.println("Значение переменной lightYears с типом long равно " + lightYears);
+        System.out.println("Значение переменной salt с типом float равно " + salt + " кг");
+        System.out.println("Значение переменной milk с типом double равно " + milk + " литра");
+        System.out.println();
+
+    }
+    public static void task2 () {
+        System.out.println("Task 2");
+        byte months = 12;
+
+
+    }
+
+
 }
