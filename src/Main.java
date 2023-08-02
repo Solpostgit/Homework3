@@ -4,8 +4,8 @@ public class Main {
         task2();
         task3();
         task4();
-        task5();/*
-        task6();
+        task5();
+        task6();/*
         task7();
         task8(); */
     }
@@ -25,7 +25,6 @@ public class Main {
         System.out.println("Значение переменной salt с типом float равно " + salt + " кг");
         System.out.println("Значение переменной milk с типом double равно " + milk + " литра");
         System.out.println();
-
     }
     public static void task2 () {
         System.out.println("Task 2 completed");
@@ -37,7 +36,6 @@ public class Main {
         short c3 = 27897;
         byte d = 67;
         System.out.println();
-
     }
     public static void task3 () {
         System.out.println("Task 3");
@@ -49,7 +47,6 @@ public class Main {
         int sheets = sheetsPaper / student;
         System.out.println("На каждого ученика рассчитано " + sheets + " листов бумаги");
         System.out.println();
-
     }
 
     public static void task4 () {
@@ -65,7 +62,6 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + job3Days + " штук бутылок");
         System.out.println("За 1 месяц машина произвела " + jobMonth + " штук бутылок");
         System.out.println();
-
     }
     public static void task5 () {
         System.out.println("Task 5");
@@ -77,6 +73,21 @@ public class Main {
         byte totalWhitePaint = (byte) (WhitePaint * totalClassroom);
         byte totalBrownPaint = (byte) (BrownPaint * totalClassroom);
         System.out.println("В школе, где " + totalClassroom + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
+        System.out.println();
+    }
+    public static void task6 () {
+        System.out.println("Task 6");
+        byte bananaWeight = 80; // вес 1 банана 80 грамм
+        byte bananaNumber = 5; // кол-во бананов в рецепте
+        short milkWeight = 105; // вес 100 мл молока
+        short milkNumber = 2; // кол-во 100 мл молока
+        short iceCreamWeight = 100; //вес 1 брикета
+        short iceCreamNumber = 2; // кол-во брикетов
+        short eggWeight = 70; // вес 1 яйца
+        short eggNumber = 4; // кол-во яиц
+        int weightGrams = bananaWeight * bananaNumber + milkWeight * milkNumber + iceCreamWeight * iceCreamNumber + eggWeight * eggNumber;
+        float weightKgs = weightGrams / 1000f;
+        System.out.println("Завтрак спортсмена " + weightGrams + " грамм, или " + weightKgs + " кг");
         System.out.println();
     }
 
