@@ -5,8 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
-        task6();/*
-        task7();
+        task6();
+        task7();/*
         task8(); */
     }
 
@@ -90,5 +90,18 @@ public class Main {
         System.out.println("Завтрак спортсмена " + weightGrams + " грамм, или " + weightKgs + " кг");
         System.out.println();
     }
-
+    public static void task7 () {
+        System.out.println("Task 7");
+        int diet1 = 250;
+        int diet2 = 500;
+        int weightLoss = 7000;
+        int diet1Days = weightLoss / diet1;
+        int diet2Days = weightLoss / diet2;
+        float dietAverage = (diet1 + diet2) / 2f;
+        float dietAverageDays = weightLoss / dietAverage;
+        System.out.println("Если терять вес по 250 грамм в день, то понадобится " + diet1Days + " дней");
+        System.out.println("Если терять вес по 500 грамм в день, то понадобится " + diet2Days + " дней");
+        System.out.println("В среднем для похудения на 7 кг, понадобится " + dietAverageDays + " дней");
+        System.out.println();
+    }
 }
