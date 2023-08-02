@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-        task3();/*
-        task4();
+        task3();
+        task4();/*
         task5(); */
     }
 
@@ -45,6 +45,22 @@ public class Main {
         byte student = (byte) (teacher1 + teacher2 + teacher3);
         int sheets = sheetsPaper / student;
         System.out.println("На каждого ученика рассчитано " + sheets + " листов бумаги");
+        System.out.println();
+
+    }
+
+    public static void task4 () {
+        System.out.println("Task 4");
+        byte machine2Min = 16;
+        byte machine1Min = (byte) (machine2Min / 2);
+        short job20Min = (short) (machine1Min * 20);
+        int job24Hours = machine1Min * 1440;
+        int job3Days = job24Hours * 24;
+        int jobMonth = job24Hours * 30; // месяц равен 30 суток
+        System.out.println("За 20 минут машина произвела " + job20Min + " штук бутылок");
+        System.out.println("За сутки машина произвела " + job24Hours + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + job3Days + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + jobMonth + " штук бутылок");
         System.out.println();
 
     }
