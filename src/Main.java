@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         task1();
-        task2();/*
-        task3();
+        task2();
+        task3();/*
         task4();
         task5(); */
     }
@@ -33,11 +33,19 @@ public class Main {
         short c2 = -159;
         short c3 = 27897;
         byte d = 67;
+        System.out.println();
 
     }
     public static void task3 () {
         System.out.println("Task 3");
-
+        byte teacher1 = 23;
+        byte teacher2 = 27;
+        byte teacher3 = 30;
+        short sheetsPaper = 480;
+        byte student = (byte) (teacher1 + teacher2 + teacher3);
+        int sheets = sheetsPaper / student;
+        System.out.println("На каждого ученика рассчитано " + sheets + " листов бумаги");
+        System.out.println();
 
     }
 
