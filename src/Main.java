@@ -6,10 +6,9 @@ public class Main {
         task4();
         task5();
         task6();
-        task7();/*
-        task8(); */
+        task7();
+        task8();
     }
-
     public static void task1 () {
         System.out.println("Task 1");
         byte months = 12;
@@ -103,5 +102,33 @@ public class Main {
         System.out.println("Если терять вес по 500 грамм в день, то понадобится " + diet2Days + " дней");
         System.out.println("В среднем для похудения на 7 кг, понадобится " + dietAverageDays + " дней");
         System.out.println();
+    }
+    public static void task8 () {
+        System.out.println("Task 8");
+        int salaryMaria = 67760; // зарплата в месяц Марии
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+
+        float annualSalaryMaria = salaryMaria * 12f; // годовой доход Марии
+        float annualSalaryDenis = salaryDenis * 12f;
+        float annualSalaryKristina = salaryKristina * 12f;
+
+        float salaryRatio = 1.1f; // коэффициент повышения зарплаты
+
+        float salaryMariaRatio = salaryMaria * salaryRatio; // зарплата в месяц после повышения
+        float salaryDenisRatio = salaryDenis * salaryRatio;
+        float salaryKristinaRatio = salaryKristina * salaryRatio;
+
+        float annualSalaryMariaRatio = annualSalaryMaria * salaryRatio; // годовой доход после повышения Марии
+        float annualSalaryDenisRatio = annualSalaryDenis * salaryRatio;
+        float annualSalaryKristinaRatio = annualSalaryKristina * salaryRatio;
+
+        float differenceMaria = annualSalaryMariaRatio - annualSalaryMaria; // разница между годовым доходом до и после повышения
+        float differenceDenis = annualSalaryDenisRatio - annualSalaryDenis;
+        float differenceKristina = annualSalaryKristinaRatio - annualSalaryKristina;
+
+        System.out.println("Маша теперь получает " + salaryMariaRatio + " рублей. Годовой доход вырос на " + differenceMaria + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisRatio + " рублей. Годовой доход вырос на " + differenceDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKristinaRatio + " рублей. Годовой доход вырос на " + differenceKristina + " рублей");
     }
 }
